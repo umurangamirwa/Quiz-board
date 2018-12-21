@@ -14,11 +14,11 @@
             <div class="jumbotron">
                     <div class="panel panel-info">
                             <div class="panel-heading">
-                                    <form>
-                                            <h1 class="panel-title">QUIZ BOARD</h1>
-                                            <p>This quiz will be concern about different question javascript</p>
-                            </div>
-                    </div>
+                                    <h1 class="panel-title">QUIZ BOARD</h1>
+                                    <p>This quiz will be concern about different question javascript</p>
+                                </div>
+                        </div>
+                        <form id="Quiz" action="index.html" method="POST" name="Quiz">
                     <div class="well">
                                         <h2>INSTRUCTIONS:</h2>
                                         <ul>
@@ -32,46 +32,46 @@
                                         
              <div class="well">
                      
-                             <div class="form-group">
+                            
                                                 <p><strong> 1.How do you declare a JavaScript variable? </strong></p><br>
-                                                <input type="radio" name="questionOne"  value="false" required>v carName .<br>
-                                                <input type="radio" name="questionOne" value="true" class="correct">var carName.<br>
-                                                <input type="radio" name="questionOne" value="false required">variable carName.<br>
+                                                <input type="radio" name="questionOne" id="mc" value="wrong" required>v carName .<br>
+                                                <input type="radio" name="questionOne" id="mc" value="correct" >var carName.<br>
+                                                <input type="radio" name="questionOne" id="mc" value="wrong">variable carName.<br>
                             </div>
                                         <div class="well">
                                                 <p><strong> 2.How do you create a function in JavaScript?</strong></p><br>
-                                                <input type="radio" name="questionTwo" value="true" class="correct">function myFunction().<br>
-                                                <input type="radio" name="questionTwo" value="false" required>function:myFunction().<br>
-                                                <input type="radio" name="questionTwo" value="false" required>function = myFunction().<br>
-                                                <input type="radio" name="questionTwo" value="false" required>none of the above.<br>
+                                                <input type="radio" name="questionTwo" id="mc" value="correct">function myFunction().<br>
+                                                <input type="radio" name="questionTwo" id="mc" value="wrong" required>function:myFunction().<br>
+                                                <input type="radio" name="questionTwo" id="mc" value="wrong" required>function = myFunction().<br>
+                                                <input type="radio" name="questionTwo" id="mc" value="wrong" required>none of the above.<br>
                                         </div>
                                         <div class="well">
                                                 <p><strong> 3. How do you write "Hello World" in an alert box?</strong></p><br>
-                                                <input type="radio" name="questionThree" value="false" required>alertBox("Hello World").<br>
-                                                <input type="radio" name="questionThree" value="false" required>msgBox("Hello World").<br>
-                                                <input type="radio" name="questionThree" value="true" class="correct">alert("Hello World").<br>
-                                                <input type="radio" name="questionThree" value="false" required> msg("Hello World").<br>
+                                                <input type="radio" name="questionThree" id="mc" value="wrong" required>alertBox("Hello World").<br>
+                                                <input type="radio" name="questionThree" id="mc" value="wrong" required>msgBox("Hello World").<br>
+                                                <input type="radio" name="questionThree" id="mc" value="correct" >alert("Hello World").<br>
+                                                <input type="radio" name="questionThree" id="mc" value="wrong" required> msg("Hello World").<br>
                                         </div>
                                         <div class="well">
                                                 <p><strong> 4.Which operator is used to assign a value to a variable?</strong></p><br>
-                                                <input type="radio" name="questionFour" value="true" class="correct" required>=<br>
-                                                <input type="radio" name="questionFour" value="false" required>*<br>
-                                                <input type="radio" name="questionFour" value="false" required>-<br>
-                                                <input type="radio" name="questionFour" value="false" required>/<br>
-                                                <input type="radio" name="questionFour" value="false" required>none of above<br>
+                                                <input type="radio" name="questionFour" id="mc" value="correct" required>=<br>
+                                                <input type="radio" name="questionFour" id="mc" value="wrong" required>*<br>
+                                                <input type="radio" name="questionFour" id="mc" value="wrong" required>-<br>
+                                                <input type="radio" name="questionFour" id="mc" value="wrong" required>/<br>
+                                                <input type="radio" name="questionFour" id="mc" value="wrong" required>none of above<br>
                                         </div>
                                         <div class="well">
                                                 <p><strong> 5.JavaScript is the same as Java</strong></p><br>
-                                                <input type="radio" name="questionFive" value="false" required>true<br>
-                                                <input type="radio" name="questionFive" value="true" class="correct" required>false<br>
-                                                <input type="radio" name="questionFive" value="false" required> none of above<br>
+                                                <input type="radio" name="questionFive" id="mc" value="wrong" required>true<br>
+                                                <input type="radio" name="questionFive" id="mc" value="correct" required>false<br>
+                                                <input type="radio" name="questionFive" id="mc" value="wrong" required> none of above<br>
                                         </div>
-                                                <input type="submit" class="btn btn-primary" value="Submit">
-                                        </form>
+                                        <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-danger" onClick="check();">
+                        </form>
             </div>  
            </div>        
                 <div id="marks">
-                        <h1 id="result">HERE IS YOUR SCORE:</h1>
+                        <h1 id="correctNumber">HERE IS YOUR SCORE:</h1>
                 </div>
                
                 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -79,25 +79,3 @@
         </body>
 </html>
        
-
-
-                
-    
-    
-
-
-           
-
-       
-
-           
-                        
-            
-               
-
-         
-
-
-
-
-    
