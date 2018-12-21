@@ -13,10 +13,12 @@
         <div class="container">
             <div class="jumbotron">
                     <div class="panel panel-info">
-                <h1>Quiz board</h1>
+                            <div class="panel-heading">
+                <h1 class="panel-title">Quiz board</h1>
                 <p>This quiz will be concern about different question javascript</p>
-            </div>
+                            </div>
                     </div>
+            </div>
             <div class="well">
                 <form id="Quiz" action="index.html" method="POST" name="Quiz">
                     <p><strong> 1.How do you declare a JavaScript variable? </strong></p><br>
@@ -63,7 +65,13 @@
             </div>
             <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-primary" onClick="check();">
                 </form>
-        </div>
+            </div>
+            <div id="fifth-p">
+                    <p id="correctNumber">HERE IS YOUR SCORE:</p>
+                </div>
+                <script src="quiz.js"></script>
+
+                
     
     </body>
 </html>
