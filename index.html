@@ -14,59 +14,75 @@
             <div class="jumbotron">
                     <div class="panel panel-info">
                             <div class="panel-heading">
-                <h1 class="panel-title">QUIZ BOARD</h1>
-                <p>This quiz will be concern about different question javascript</p>
+                                    <form>
+                                            <h1 class="panel-title">QUIZ BOARD</h1>
+                                            <p>This quiz will be concern about different question javascript</p>
                             </div>
                     </div>
-            </div>
-            <div class="well">
-                    <form id="Quiz" action="index.html" method="POST" name="Quiz">
-                            <p><strong> 1.How do you declare a JavaScript variable? </strong></p><br>
-                            <input type="radio" name="questionOne" id="mc" value="wrong">v carName .<br>
-                            <input type="radio" name="questionOne" id="mc" value="correct">var carName.<br>
-                            <input type="radio" name="questionOne" id="mc" value="wrong">variable carName.<br>
-            </div>
-            <div class="well">
-                    <p><strong> 2.How do you create a function in JavaScript?</strong></p><br>
-                    <input type="radio" name="questionTwo" id="mc" value="correct">function myFunction().<br>
-                    <input type="radio" name="questionTwo" id="mc" value="wrong">function:myFunction().<br>
-                    <input type="radio" name="questionTwo" id="mc" value="wrong">function = myFunction().<br>
-                    <input type="radio" name="questionTwo" id="mc" value="wrong">none of the above.<br>
-            </div>
-            <div class="well">
-                    <p><strong> 3. How do you write "Hello World" in an alert box?</strong></p><br>
-                    <input type="radio" name="questionThree" id="mc" value="wrong">alertBox("Hello World").<br>
-                    <input type="radio" name="questionThree" id="mc" value="wrong">msgBox("Hello World").<br>
-                    <input type="radio" name="questionThree" id="mc" value="correct">alert("Hello World").<br>
-                    <input type="radio" name="questionThree" id="mc" value="wrong"> msg("Hello World").<br>
-            </div>
-            <div class="well">
-                    <p><strong> 4.Which operator is used to assign a value to a variable?</strong></p><br>
-                    <input type="radio" name="questionFour" id="mc" value="correct">=<br>
-                    <input type="radio" name="questionFour" id="mc" value="wrong">*<br>
-                    <input type="radio" name="questionFour" id="mc" value="wrong">-<br>
-                    <input type="radio" name="questionFour" id="mc" value="wrong">/<br>
-                    <input type="radio" name="questionFour" id="mc" value="wrong">none of above<br>
-            </div>
-            <div class="well">
-                    <p><strong> 5.JavaScript is the same as Java</strong></p><br>
-                    <input type="radio" name="questionFive" id="mc" value="wrong">true<br>
-                    <input type="radio" name="questionFive" id="mc" value="correct">false<br>
-                    <input type="radio" name="questionFive" id="mc" value="wrong"> none of above<br>
-            </div>
-            <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-primary" onClick="check();">
-                </form>
-                <div id="fifth-p">
-                        <p id="correctNumber">HERE IS YOUR SCORE:</p>
+                    <div class="well">
+                                        <h2>INSTRUCTIONS:</h2>
+                                        <ul>
+                                                <li>The exam must start at 8h Am.</li>
+                                                <li>All students will take the papers in their own classrooms unless otherwise stated.</li>
+                                                <li>All students are to sit individually according to their index numbers or by following a seating plan which will be displayed outside the exam venue.</li>
+                                                <li>Mobile phones and other electronic devices are strictly not allowed to be used.</li>
+                                                <li>Mobile phones are to be switched off and placed inside the school bags.</li>
+                                        </ul>
+                   </div>
+                                        
+             <div class="well">
+                     
+                             <div class="form-group">
+                                                <p><strong> 1.How do you declare a JavaScript variable? </strong></p><br>
+                                                <input type="radio" name="questionOne"  value="false" required>v carName .<br>
+                                                <input type="radio" name="questionOne" value="true" class="correct">var carName.<br>
+                                                <input type="radio" name="questionOne" value="false required">variable carName.<br>
+                            </div>
+                                        <div class="well">
+                                                <p><strong> 2.How do you create a function in JavaScript?</strong></p><br>
+                                                <input type="radio" name="questionTwo" value="true" class="correct">function myFunction().<br>
+                                                <input type="radio" name="questionTwo" value="false" required>function:myFunction().<br>
+                                                <input type="radio" name="questionTwo" value="false" required>function = myFunction().<br>
+                                                <input type="radio" name="questionTwo" value="false" required>none of the above.<br>
+                                        </div>
+                                        <div class="well">
+                                                <p><strong> 3. How do you write "Hello World" in an alert box?</strong></p><br>
+                                                <input type="radio" name="questionThree" value="false" required>alertBox("Hello World").<br>
+                                                <input type="radio" name="questionThree" value="false" required>msgBox("Hello World").<br>
+                                                <input type="radio" name="questionThree" value="true" class="correct">alert("Hello World").<br>
+                                                <input type="radio" name="questionThree" value="false" required> msg("Hello World").<br>
+                                        </div>
+                                        <div class="well">
+                                                <p><strong> 4.Which operator is used to assign a value to a variable?</strong></p><br>
+                                                <input type="radio" name="questionFour" value="true" class="correct" required>=<br>
+                                                <input type="radio" name="questionFour" value="false" required>*<br>
+                                                <input type="radio" name="questionFour" value="false" required>-<br>
+                                                <input type="radio" name="questionFour" value="false" required>/<br>
+                                                <input type="radio" name="questionFour" value="false" required>none of above<br>
+                                        </div>
+                                        <div class="well">
+                                                <p><strong> 5.JavaScript is the same as Java</strong></p><br>
+                                                <input type="radio" name="questionFive" value="false" required>true<br>
+                                                <input type="radio" name="questionFive" value="true" class="correct" required>false<br>
+                                                <input type="radio" name="questionFive" value="false" required> none of above<br>
+                                        </div>
+                                                <input type="submit" class="btn btn-primary" value="Submit">
+                                        </form>
+            </div>  
+           </div>        
+                <div id="marks">
+                        <h1 id="result">HERE IS YOUR SCORE:</h1>
                 </div>
-        </div>
+               
+                <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                <script src="script.js"></script>
+        </body>
+</html>
+       
 
-                <script src="triangle.js"></script>
 
                 
     
-    </body>
-</html>
     
 
 
