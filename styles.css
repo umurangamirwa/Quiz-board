@@ -1,2 +1,20 @@
-
- 
+h1 P{
+    text-align: center;
+} 
+.jumbotron{
+    background-image: url(../Quiz-board/image/background.jpeg);
+    background-attachment: fixed; 
+}
+.well{
+    background-color: #FFFACD;
+}
+#marks{
+    visibility: hidden;
+    background-color: burlywood;
+    height:300px;
+}
+#marks p{
+    text-align: center;
+    transform: translate(0%,190%);
+    font-size: 40px;
+}
