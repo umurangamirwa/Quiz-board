@@ -24,7 +24,7 @@ function check() {
 
 
 
-    document.getElementById("fifth-p").style.visibility = "visible";
+    document.getElementById("marks").style.visibility = "visible";
     document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE: " + right + "/20pts";
     $(".container").fadeOut();
 
