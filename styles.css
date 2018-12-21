@@ -16,13 +16,4 @@ h1{
     background-size: contain; 
     position: relative;
 }
-#fifth-p{
-    visibility: hidden;
-    background-color: burlywood;
-    height:300px;
-}
-#fifth-p p{
-    text-align: center;
-    transform: translate(0%,190%);
-    font-size: 40px;
-}
+ 
