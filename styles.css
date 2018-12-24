@@ -1,5 +1,8 @@
 h1 P{
     text-align: center;
+}
+h1{
+    background-image:url(../image2.JPEG);
 } 
 .jumbotron{
     background-image: url(../Quiz-board/image/background.jpeg);

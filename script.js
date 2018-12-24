@@ -22,8 +22,6 @@ function check() {
         right = right + 4;
     };
 
-
-
     document.getElementById("marks").style.visibility = "visible";
     document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE: " + right + "/20pts";
     $(".container").fadeOut();
