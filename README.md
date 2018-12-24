@@ -37,6 +37,7 @@ For any questions,addition,ideas or concerns. Don't hesitate to contact me via m
 
 ## link to live site on GitHub Pages
 
+https://umurangamirwa.github.io/Quiz-board/
 
 ## License
 *MIT 
