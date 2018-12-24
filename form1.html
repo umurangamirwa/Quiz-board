@@ -14,8 +14,10 @@
             <div class="jumbotron">
                     <div class="panel panel-info">
                             <div class="panel-heading">
-                                    <h1 class="panel-title"><strong>QUIZ BOARD</h1>
+                                <div class="panel panel-info">
+                                    <h1 class="panel-title"><strong>QUIZ BOARD</strong></h1>
                                     <p>This quiz will be concern about different question javascript</p>
+                                </div>
                             </div>
                     </div>
                 <form id="Quiz" action="index.html" method="POST" name="Quiz">
@@ -31,9 +33,11 @@
                                                 </ul>
                                         </div>
                                 </div>
-                                        <div class="panel panel-default">
+                                <h2><em>Answer all the questions.</em></h2>
+
+                                        <div class="well">
                                             <div class="panel panel-default"> 
-                                                <div class="panel-title">
+                                                <div class="panel-heading">
                                                         <p class="panel-title"><strong> 1.How do you declare a JavaScript variable? </strong></p><br>
                                                 </div>
                                                 <div class="panel-body">
@@ -42,46 +46,55 @@
                                                         <input type="radio" name="questionOne" id="mc" value="wrong">variable carName.<br>
                                                 </div>
                                            </div>
-                                        <div class="panel panel-default">
+                                        </div>
+                                        <div class="well">
                                            <div class="panel panel-default">
-                                                <div class="panel-title">
+                                                <div class="panel-heading">
                                                         <p div class="panel-title"><strong> 2.How do you create a function in JavaScript?</strong></p><br>
+                                                </div>
                                                         <input type="radio" name="questionTwo" id="mc" value="correct">function myFunction().<br>
                                                         <input type="radio" name="questionTwo" id="mc" value="wrong" required>function:myFunction().<br>
                                                         <input type="radio" name="questionTwo" id="mc" value="wrong" required>function = myFunction().<br>
                                                         <input type="radio" name="questionTwo" id="mc" value="wrong" required>none of the above.<br>
-                                                </div>
+                                                
+                                            </div>
                                         </div>
-                                        <div class="panel panel-default">
+                                        <div class="well">
                                            <div class="panel panel-default">
-                                                <div class="panel-title">
+                                                <div class="panel-heading">
                                                         <p div class="panel-title"><strong> 3. How do you write "Hello World" in an alert box?</strong></p><br>
+                                                </div>
                                                         <input type="radio" name="questionThree" id="mc" value="wrong" required>alertBox("Hello World").<br>
                                                         <input type="radio" name="questionThree" id="mc" value="wrong" required>msgBox("Hello World").<br>
                                                         <input type="radio" name="questionThree" id="mc" value="correct" >alert("Hello World").<br>
                                                         <input type="radio" name="questionThree" id="mc" value="wrong" required> msg("Hello World").<br>
-                                                </div>
+                                                
                                           </div>
-                                        <div class="panel panel-default">
+                                        </div>
+                                        <div class="well">
                                             <div class="panel panel-default">
-                                                <div class="panel-title">
+                                                <div class="panel-heading">
                                                         <p div class="panel-title"><strong> 4.Which operator is used to assign a value to a variable?</strong></p><br>
+                                                </div>
                                                         <input type="radio" name="questionFour" id="mc" value="correct" required>=<br>
                                                         <input type="radio" name="questionFour" id="mc" value="wrong" required>*<br>
                                                         <input type="radio" name="questionFour" id="mc" value="wrong" required>-<br>
                                                         <input type="radio" name="questionFour" id="mc" value="wrong" required>/<br>
                                                         <input type="radio" name="questionFour" id="mc" value="wrong" required>none of above<br>
-                                                </div>
+                                                
                                            </div>
-                                        <div class="panel panel-default">
+                                        </div>
+                                        <div class="well">
                                             <div class="panel panel-default">
-                                                <div class="panel-title">
+                                                <div class="panel-heading">
                                                         <p class="panel-title"><strong> 5.JavaScript is the same as Java</strong></p><br>
+                                                </div>
                                                         <input type="radio" name="questionFive" id="mc" value="wrong" required>true<br>
                                                         <input type="radio" name="questionFive" id="mc" value="correct" required>false<br>
                                                         <input type="radio" name="questionFive" id="mc" value="wrong" required> none of above<br>
-                                                </div>
+                                                
                                             </div>
+                                        </div>
 
                                         <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-danger" onClick="check();">
                 </form>

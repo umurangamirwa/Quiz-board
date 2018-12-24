@@ -3,6 +3,7 @@ h1 P{
 }
 h1{
     background-image:url(../Quiz-board/image/image2.JPEG);
+    font-size: 20px;
 } 
 .jumbotron{
     background-image: url(../Quiz-board/image/background.jpeg);
